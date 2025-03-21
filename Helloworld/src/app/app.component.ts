@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,13 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'HelloWorld';
-  imgUrl = 'assets/BL_logo_square_png.png'; // Path to the image
-  url = 'https://www.bridgelabz.com'; // URL to open
+  title = 'Helloworld';
+  imgUrl = "assets/BL_logo_square_png.png"; 
+  url = "https://www.bridgelabz.com";
+  userName: string = ""; // User input binding
 
-  // Event handler for opening the URL in a new tab
   onClick(event: Event): void {
-    console.log('BridgeLabz Logo Clicked!', event);
-    window.open(this.url, '_blank'); // Open in a new tab
+    console.log("BridgeLabz logo clicked!", event);
+    window.open(this.url, "_blank");
   }
 }
