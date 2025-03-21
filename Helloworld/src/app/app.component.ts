@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'HelloWorld';
+  imgUrl = './assets/BL_logo_square_jpg.jpg';
 
   ngOnInit(): void {
     this.title = "Hello from BridgeLabz.";
